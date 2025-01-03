@@ -22,6 +22,8 @@ public class Food {
         this.price = price;
     }
 
+    public Food() {}
+
     public Long getId() {
         return id;
     }
@@ -48,10 +50,6 @@ public class Food {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
-    }
-
-    public Food(Long id) {
-        this.id = id;
     }
 
     public Food(FoodRequestDTO data){
